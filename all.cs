@@ -51,13 +51,13 @@ public class Program
     }
     static int parents_council(int n, int k)
     {
-        int to_add = n;
+        int to_add = k;
         int all = n+k;
         while (all / to_add < (float)1 / 3)
         {
             to_add++;
         }
-        return to_add - n;
+        return to_add - k;
     }
 
     public static void Main()
